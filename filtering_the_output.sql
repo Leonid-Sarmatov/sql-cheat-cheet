@@ -1,3 +1,4 @@
+
 country:
   id |   name   |  populate  |  area
 --------------------------------------
@@ -21,8 +22,8 @@ SELECT name FROM city WHERE name LIKE 'P%' OR name LIKE '%s';
 # Названия городов которые начинаются на любую букву и заканчиваются на ublin
 SELECT name FROM city WHERE name LIKE '_ublin';
 
-#
-
+# Все названия городов кроме Берлина и Мадрида
+SELECT name FROM city WHERE name != 'Berlin' AND name != 'Madrid';
 
 #
 
